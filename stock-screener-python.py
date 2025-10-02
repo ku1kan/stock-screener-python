@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 
 
 
@@ -558,7 +558,7 @@ def compute_metrics(ticker: str, session: requests.Session, retries: int = 2, re
     capex_ttm = _sum_last_n(q_cf, ['Capital Expenditures', 'Capital Expenditure'], 4)
     fcf_ttm = np.nan
     if not (np.isnan(cfo_ttm) or np.isnan(capex_ttm)):
-        # FCF = CFO + CapEx  (CapEx ist meist negativ → korrekter Abzug)
+        # FCF = CFO + CapEx  CapEx mostly negative
         fcf_ttm = float(cfo_ttm) + float(capex_ttm)
 
     # OCF growth (TTM vs prior TTM)
@@ -606,7 +606,7 @@ def compute_metrics(ticker: str, session: requests.Session, retries: int = 2, re
     net_debt_latest = (0 if np.isnan(total_debt_latest) else total_debt_latest) - cash_like
 
     # Coverage/Leverage
-    ebit_ttm = op_income_ttm  # approximation
+    ebit_ttm = op_income_ttm  # approx
     interest_coverage = _ratio_safe(ebit_ttm, interest_expense_ttm)
     netdebt_ebitda = _ratio_safe(net_debt_latest, ebitda_ttm)
 
@@ -1422,4 +1422,5 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
 
 if __name__ == '__main__':
     raise SystemExit(main())
+
 
