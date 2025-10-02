@@ -61,6 +61,8 @@ Parameter	Beschreibung	Beispiel
 --top-n	Top-N Aktien nach Score	20
 --fcf-margin-min	Mindest-FCF-Marge (Standard: 20 %)	0.25
 
+📄 Beispielausgabe
+
 | PASS | Score Overall | Ticker | Name                         | Price   | FCF Yield | ROE TTM | Piotroski F | EV/EBITDA | Rev CAGR (3Y) |
 | ---- | ------------- | ------ | ---------------------------- | ------- | --------- | ------- | ----------- | --------- | ------------- |
 | ✅    | 61.7          | FICO   | Fair Isaac Corporation       | 1548.36 | 2.0 %     | 72.4 %  | 8           | 44.2x     | 9.3 %         |
