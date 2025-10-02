@@ -61,7 +61,15 @@ Parameter	Beschreibung	Beispiel
 --top-n	Top-N Aktien nach Score	20
 --fcf-margin-min	Mindest-FCF-Marge (Standard: 20 %)	0.25
 
-📄 Beispielausgabe
+
+📊 Beispielausgabe
+Eine Beispieldatei Aktien-Scores ist im Repository enthalten:  
+➡ [stock_screener_sample.xlsx](./stock_screener_sample.xlsx)
+
+
+
+
+📄 Beispielausgabe                              
 
 | PASS | Score Overall | Ticker | Name                         | Price   | FCF Yield | ROE TTM | Piotroski F | EV/EBITDA | Rev CAGR (3Y) |
 | ---- | ------------- | ------ | ---------------------------- | ------- | --------- | ------- | ----------- | --------- | ------------- |
